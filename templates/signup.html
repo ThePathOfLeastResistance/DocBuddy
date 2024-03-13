@@ -1,0 +1,90 @@
+{% include "base.html" %}
+
+<body class="loginpage">
+  <form action="/signup" method="post" class="center-doc center-doc-q">
+      <br>
+  
+  </br>
+    <div class="form-group login center-doc-fields">
+      <label for="EmailControl">Email</label>
+      <input type="text" class="form-control" id="EmailControl" placeholder="name@example.com" name="email">
+    </div>
+  </br>
+  
+  <div class = "form-group login center-doc-fields">
+    <label for="question7">  Create Password. </label>
+    <textarea class="form-control" name="password" id="question7" rows="1"></textarea>
+  </div>
+  </br>
+
+    <div class="form-group login center-doc-fields">
+      <label for="question2">  Please list your current job occupation </label>
+      <textarea name="job"class="form-control" id="question2" rows="1"></textarea>
+    </div>
+    </br>
+  
+    <div class = "form-group login center-doc-fields">
+      <label for="question3">  Please list your date of birth (xx/yy/zzzz). </label>
+      <textarea name="birth" class="form-control" id="question3" rows="1"></textarea>
+    </div>
+    </br>
+  
+    <div class = "form-group login center-doc-fields">
+      <label for="question4">  Please list your phone number. </label>
+      <textarea name="number" class="form-control" id="question4" rows="1"></textarea>
+    </div>
+    </br>
+
+  <div class="form-group login center-doc-fields">
+    <label for="exampleFormControlSelect1">Please select your gender. </label>
+    <select name="gender" class="form-control" id="exampleFormControlSelect1">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+  </div>
+  </br>
+  
+    </br>
+  <div class = "form-group login center-doc-fields">
+    <label for="question6">  Please list other information. </label>
+    <textarea class="form-control" id="question6" rows="1"></textarea>
+  </div>
+  </br>
+  
+  <div class="form-group login center-doc-fields">
+    <label for="exampleFormControlSelect1">What is your race or ethnicity? (Choose your most prominent) </label>
+    <select name = "race" class="form-control" id="exampleFormControlSelect1">
+      <option>Native American or Alaska Native</option>
+      <option>Black, Afro-Carribean, or African American</A></option>
+      <option>East Asian or Asian American</option>
+      <option>Central Asian or Central Asian American</option>
+      <option>South East Asian or South East Asian American</option>
+      <option>South Asian or South Asian American</option>
+      <option>Hispanic or Latin American</option>
+      <option>Middle Eastern or North African</option>
+      <option>Native Hawaiian or Other Pacific Islander</option>
+      <option>Non-Hispanic White or Euro-American</option>
+      <option>Other</option>
+      <option>Prefer not to say</option>
+    </select>
+  </div>
+  </br>
+  
+    <div class="form-group login center-doc-fields">
+      <label for="question1">  Please list any medical issues that you have had or are currently experiencing. </label>
+      <textarea name="issues" class="form-control" id="question1" rows="2"></textarea>
+    </div> 
+      <div class="form-group login center-doc-fields">
+        </br>
+        
+        <label for="FileSubmit">   Import medical files from last check-up</label>
+        <input type="file" class="form-control-file" id="FileSubmit">
+      </div>
+  </br>
+  
+
+  <button type="submit" value = "submit" class="btn btn-primary login">Finish</button>
+    
+  </form>
+</body>

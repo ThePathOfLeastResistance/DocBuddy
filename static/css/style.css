@@ -1,0 +1,86 @@
+.change-page{
+  background-color: #CADEFC;
+}
+.home-page{
+  background-color: #CADEFC;
+}
+
+.loginpage{
+  background-color: #CADEFC;
+}
+
+.card-doc img{
+  max-height: 15em;
+  width: auto;
+}
+
+.title{
+  margin-left:30px;
+}
+
+.login{
+  margin-right:400px;
+  margin-left:30px;
+}
+
+.doc{
+  margin-right:50px;
+}
+
+.center-doc {
+  background: #DEFCF9;
+  border-radius: 25px;
+  border: 3px solid;
+  margin: auto;
+  padding: 10px;
+}
+
+.center-doc-q{
+  width: 50%;
+}
+
+.center-doc-fields {
+  width: 85%;
+  margin-right: 40px;
+}
+
+.center-page {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+.center-page h1{
+  font-size: 10em;
+}
+
+.talk-form{
+  background-color: #FFFFD2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+}
+
+.talk-div {
+  background-color: #CADEFC;
+  /* height: 95%; */
+  position: relative;
+}
+
+.left-chat{
+  display: flex;
+  justify-content: flex-start;
+  background-color: #FFFFD2;
+  width: 30%;
+  border-radius: 25px;
+}
+
+.right-chat{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FFFFD2;
+  width: 30%;
+  border-radius: 25px;
+}

@@ -1,0 +1,64 @@
+{% include "base.html" %}
+
+
+<div class = "change-page">
+<div class = "card-doc row px-5 text-center py-5">
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'General Practitioner')}}">
+    <div class="card-doc card text-center center-doc d-flex align-items-center justify-content-center rounded-8" style="width: 22rem;">
+      <img src="../static/assets/doc.png" class="px-3" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">General Practitioner</h5>
+        <p class="card-text">Patients can upload previous physicals and self-reported  symptoms to receive personalized care from our General Practitioner service.</p>
+      </div>
+    </div>
+  </a>
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'Nutritionist')}}">
+    <div class="card card-doc text-center center-doc d-flex align-items-center justify-content-center" style="width: 22rem;">
+      <img src="../static/assets/nut.png" class="px-3" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nutritionist</h5>
+        <p class="card-text">Receive a catered treatment plan for your dietary wellness and nutrition needs. Consult our Nutritionist service to discover options to maintain your health goals.</p>
+      </div>
+    </div>
+    </a>
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'Cardiologist')}}">
+      <div class="card card-doc text-center center-doc d-flex align-items-center justify-content-center" style="width: 22rem;">
+        <img src="../static/assets/car.png" class="px-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cardiologist</h5>
+          <p class="card-text">Receive a personalized therapeutic program to address your heart health and cardiovascular issues. Our Cardiologist service is designed to help you achieve optimal results.</p>
+        </div>
+    </div>
+  </a>
+</div>
+<div class = "card-doc row px-5 text-center py-5">
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'Dermatologist')}}">
+    <div class="card-doc card text-center center-doc d-flex align-items-center justify-content-center" style="width: 22rem;">
+      <img src="../static/assets/der.png" class="px-3" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dermatologist</h5>
+        <p class="card-text">Address concerns related to your skin health. You will receive specialized and adaptive intervention options for your dermatologival health.</p>
+      </div>
+    </div>
+  </a>
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'Neurologist')}}">
+    <div class="card card-doc text-center center-doc d-flex align-items-center justify-content-center" style="width: 22rem;">
+      <img src="../static/assets/nur.png" class="px-3" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Neurologist</h5>
+        <p class="card-text">Discover personalized treatment options for your cognitive concerns or neurological disorders with our Neurologist service.</p>
+      </div>
+    </div>
+    </a>
+  <a class = "col-4 text-decoration-none text-center" href="{{ url_for('talk', type = 'Psychiatrist')}}">
+      <div class="card card-doc text-center center-doc d-flex align-items-center justify-content-center" style="width: 22rem;">
+        <img src="../static/assets/psy.png" class="px-3" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Psychiatrist</h5>
+          <p class="card-text">Receive diagnoses and treatment options for your mental health challenges and help to navigate the complex world of mental health.</p>
+        </div>
+    </div>
+  </a>
+</div>
+</div>
+ {% include "foot.html" %}

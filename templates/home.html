@@ -1,0 +1,65 @@
+{% include "base.html" %}
+<div class = "home-page">
+<div class = "row">
+
+  <div class="col-6">
+  
+    <div class="py-5 text-center center-page">
+      <br>
+      <br>
+      <br>
+      <h1 class="fs-1">Welcome to DocBuddy, the All-In-One <span style = "color: red">Revolutionary </span>Online Doctor</h2>
+      <p>DocBuddy empowers patients to access medical solutions remotely, ensuring timely treatment options, expert advice, and improved health outcomes.</p>
+      {% if session.user_id %}
+      <a href = "/index"><button class="btn btn-secondary" type="button">Talk to DocBuddy Now</button>
+       </a>
+      {% else %}
+      <a href = "https://2c7d3dd4-e941-4ed5-9d58-40646a72723b-00-34qwhawof52cu.picard.replit.dev/login"><button class="btn btn-secondary" type="button">Login to DocBuddy Now</button>
+         </a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="col-6">
+  <img src="../static/assets/doc.png" class="w-100" alt="..."">
+  </div>
+
+</div>
+
+  <div class="container py-4">
+    
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Features</h1>
+        <p class="col-md-8 fs-4">DocBuddy improves practitioner-patient interactions and outcomes by integrating advanced diagnostic algorithms into an easy to use platform. Patients will be able to engage with our General Practitioner, Dermatologist, Neurologist, Psychiatrist, Cardiologist, and Nutritionist services for their healthcare needs. Our intelligent assistance platform is designed to revolutionize healthcare delivery and access to healthcare professionals, making diagnosis and treatment more efficient, accurate, and patient-centric.</p>
+        {% if session.user_id %}
+        <a href = "/index">
+          <button class="btn btn-primary btn-lg text-decoration-none" type="button">  Access DocBuddy</button> </a>
+        {% else %}
+         <a href = "https://2c7d3dd4-e941-4ed5-9d58-40646a72723b-00-34qwhawof52cu.picard.replit.dev/login">
+          <button class="btn btn-primary btn-lg text-decoration-none" type="button">  Access DocBuddy</button> 
+         </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3 text-decoration-none">
+          <h2>Purpose</h2>
+          <p>Healthcare should be accessible to all who require it. DocBuddy is a platform that breaks down the economic, geographic, and social barriers that prevent people from accessing the healthcare system. Through DocBuddy, patients can access medical solutions without the need to visit a doctor or hospital. Patients will be empowered by timely access to treatment options and expert advice, which will result in their increased well-being and improved health outcomes.</p>
+         
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3 text-decoration-none"">
+          <h2>Why Us</h2>
+          <p>Our streamlined healthcare assistance platform is designed to revolutionize healthcare delivery and access to healthcare professionals, making diagnosis and treatment more accessible and efficient. Adapt to the evolving healthcare industry with DocBuddy's optimized diagnostic capabilities. Join us in reshaping the future of healthcare with DocBuddy. Together, let's make every patient journey a healthier, happier one.</p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% include "foot.html" %}

@@ -1,0 +1,21 @@
+{% include "base.html" %}
+<div class = "talk-div">
+  {% for post in list[2:] %}
+    {% if post.role == "user" %}
+  <h2 class = "py-3">User</h2>
+  <div classname = "py-3">
+      <p class = "left-chat  p-3">{{ post.content }}</p>
+    </div>
+    {% else %}
+  <h2 class = "p-3">DocBuddy</h2>
+      <p class = "right-chat p-3">{{ post.content }}</p>
+    {% endif%}
+  {% endfor %}
+  <h1>Question</h1>
+  <div class= "talk-form-div py-0">
+    <form class = "talk-form px-5 py-5" action="/talk/<{{type}}>" method="post">
+      <input class = "px-2" type="text" name="question" placeholder="Enter your question here" ">
+      <input type="submit" value="Submit">
+    </form>
+</div>
+ {% include "foot.html" %}
